@@ -1,0 +1,24 @@
+.body {
+    margin: 0;
+}
+
+.personalInfo {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.face {
+    align-self: center;
+}
+
+.faceImg {
+    height: 150px;
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+section p, .item p {
+    margin: 5px 0;
+}

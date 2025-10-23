@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .personalInfo {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        .faceImg {
+            height: 150px;
+            width: 150px;
+            /* Made width equal to height for a perfect circle */
+            border-radius: 50%;
+            margin-right: 30px;
+            margin-left: 10px;
+            object-fit: cover;
+            /* Prevents the image from stretching */
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        section p,
+        .item p,
+        ul {
+            margin: 5px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="personalInfo">
+        <div class="face">
+            <img class="faceImg" src="./images/IMG_0151.JPG" alt="My face">
+        </div>
+        <div class="contactInfo">
+            <h1>Nguyễn Minh Tuấn</h1>
+            <p>Email: <a href="mailto:tuannm226095@sis.edu.vn">tuannm226095@sis.edu.vn</a></p>
+            <p>Phone: (+84) 123564897</p>
+            <p>GitHub: <a href="https://github.com">Nguyễn Minh Tuấn</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com">Nguyễn Minh Tuấn</a></p>
+        </div>
+    </div>
+
+    <div class="mainContent">
+        <section>
+            <h2>Research Interests</h2>
+            <p>Web, Testing.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <ul>
+                    <li>
+                        <strong>Bachelor in Computer Science</strong>, HUST (2022-now) – GPA: 2.71/4.0
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Research Experience</h2>
+        </section>
+
+        <section>
+            <h2>Industry Experience</h2>
+        </section>
+
+        <section>
+            <h2>Selected Publications</h2>
+            <p>More at <a href="https://github.com">GitHub</a></p>
+        </section>
+
+        <section>
+            <h2>Awards & Honors</h2>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <strong>Programming:</strong> Python, Java, C/C++
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>Vietnamese – Native</li>
+                <li>English – B2 (TOEIC 865, VSTEP 7.5)</li>
+            </ul>
+        </section>
+
+        <p class="footer">© 2025 Nguyễn Minh Tuấn</p>
+    </div>
+</body>
+
+</html>

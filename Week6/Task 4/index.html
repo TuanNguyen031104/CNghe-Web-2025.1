@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Cà phê Hạt Mới</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cửa hàng Cà phê Hạt Mới</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gioi-thieu">
+            <h2>Về chúng tôi</h2>
+            <p>Chúng tôi chuyên cung cấp các loại hạt cà phê rang xay nguyên chất, mang đến hương vị tuyệt hảo cho ly cà
+                phê của bạn.</p>
+        </section>
+
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Khám phá hương vị cà phê đích thực</h2>
+                <p>Tuyển chọn từ những hạt cà phê tốt nhất, rang xay thủ công mỗi ngày.</p>
+            </div>
+        </section>
+
+        <section id="danh-sach-san-pham">
+            <h2>Sản phẩm nổi bật</h2>
+
+            <div id="controls">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                <button id="searchBtn">Tìm</button>
+                <button id="addProductBtn">Thêm sản phẩm</button>
+            </div>
+
+            <div id="product-list-container">
+                <article class="san-pham">
+                    <img src="../images/arabica.jpg" alt="Hình ảnh Cà phê Arabica">
+                    <h3>Cà phê Arabica Cầu Đất</h3>
+                    <p>Hương thơm nồng nàn, vị chua thanh tao, hậu vị ngọt ngào.</p>
+                    <p>Giá: 120.000 VNĐ / 500g</p>
+                </article>
+
+                <article class="san-pham">
+                    <img src="../images/robusta.jpg" alt="Hình ảnh Cà phê Robusta">
+                    <h3>Cà phê Robusta Buôn Ma Thuột</h3>
+                    <p>Hương vị đậm đà, mạnh mẽ, hàm lượng caffeine cao, phù hợp cho một ngày tỉnh táo.</p>
+                    <p>Giá: 80.000 VNĐ / 500g</p>
+                </article>
+
+                <article class="san-pham">
+                    <img src="../images/phin.png" alt="Hình ảnh Cà phê Phin Blend">
+                    <h3>Cà phê Phin Blend (Mix)</h3>
+                    <p>Sự kết hợp hoàn hảo giữa Arabica và Robusta, cân bằng vị, lý tưởng cho pha phin.</p>
+                    <p>Giá: 95.000 VNĐ / 500g</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="lien-he">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Để lại thông tin để nhận tư vấn hoặc đăng ký nhận bản tin hàng tuần.</p>
+            <form>
+                <div>
+                    <label for="hoTen">Họ và tên:</label>
+                    <input type="text" id="hoTen" name="hoTen" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="thongDiep">Thông điệp:</label>
+                    <textarea id="thongDiep" name="thongDiep" rows="4"></textarea>
+                </div>
+                <button type="submit">Gửi</button>
+            </form>
+
+            <form id="addProductForm" class="hidden">
+                <h3>Thêm sản phẩm mới</h3>
+                <div>
+                    <label for="newName">Tên sản phẩm:</label>
+                    <input type="text" id="newName" name="newName" required>
+                </div>
+                <div>
+                    <label for="newPrice">Giá:</label>
+                    <input type="number" id="newPrice" name="newPrice" required>
+                </div>
+                <div>
+                    <label for="newDesc">Mô tả:</label>
+                    <textarea id="newDesc" name="newDesc" rows="3"></textarea>
+                </div>
+                <p id="errorMsg"></p>
+                <button type="submit">Thêm</button>
+                <button type="button" id="cancelBtn">Hủy</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Cửa hàng Cà phê Hạt Mới. Mọi quyền được bảo lưu.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
